@@ -40,7 +40,9 @@ function Index() {
         <button className='btn'>find</button>
       </div>
 
-      <span className='model_title'>models</span>
+      <Link to='/models'>
+        <span className='model_title'>show all models</span>
+      </Link>
       <div className='grid_models'>
         {Models.map((model, key) => (
           <Link to={"/model/" + key} className='model'>

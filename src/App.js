@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import Model from "./pages/model";
 import BookModel from "./pages/book";
 import BecamModel from "./pages/becam_model";
+import AllModels from "./pages/all_models";
 
 //components
 import Navbar from "./components/navbar";
@@ -24,7 +25,8 @@ const routes = [
   { path: "/", name: "Home", Component: Home },
   { path: "/model/:id", name: "Home", Component: Model },
   { path: "/book-model/:id", name: "Home", Component: BookModel },
-  { path: "/becam-model", name: "Home", Component: BecamModel }
+  { path: "/becam-model", name: "Home", Component: BecamModel },
+  { path: "/models", name: "Models", Component: AllModels }
 ];
 
 function App() {
