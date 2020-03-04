@@ -1,0 +1,80 @@
+.book {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 410px 2fr 1fr;
+    grid-template-rows: minmax(300px, 600px);
+    grid-column-gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+
+    img {
+        width: 100%;
+        height: 80%;
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+        font-weight: lighter;
+        font-size: 13x;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: white;
+        font-weight: lighter;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .midle {
+        .midle_input {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .group_input {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: white;
+                font-weight: lighter;
+                font-size: 40px;
+            }
+
+            .input {
+                width: 70%;
+                height: 40px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid #707070;
+                color: white;
+                padding: 10px;
+                font-size: 18px;
+
+                &:focus {
+                    outline-width: 0px;
+                }
+            }
+        }
+
+        .info {
+            height: 20%;
+            width: 70%;
+            display: flex;
+            align-items: flex-end;
+            font-weight: lighter;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+    }
+
+    .calendar {}
+}

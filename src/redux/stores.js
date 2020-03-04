@@ -1,6 +1,7 @@
 import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import uiReducer from "./reducers/uiReducer";
+import { composeWithDevTools } from "redux-devtools-extension";
 
 const middleware = [thunk];
 
@@ -13,7 +14,7 @@ const reducers = combineReducers({
 const store = createStore(
   reducers,
   initialState,
-  compose(applyMiddleware(...middleware))
+  composeWithDevTools(applyMiddleware(...middleware))
 );
 
 export default store;

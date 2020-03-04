@@ -1,0 +1,47 @@
+.site-calendar-customize-header-wrapper {
+    width: 300px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+
+    span {
+        background-color: #fff;
+        color: black;
+    }
+
+    svg {
+        background-color: #fff;
+    }
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    z-index: 1;
+    color: red;
+    background: #fff;
+    border-color: #1890ff;
+}
+
+.ant-picker-content th,
+.ant-picker-content td {
+    position: relative;
+    min-width: 24px;
+    font-weight: 400;
+    color: black;
+    background-color: #fff;
+}
+
+.ant-picker-calendar .ant-picker-panel .ant-picker-body {
+    padding: 8px 12px;
+    background-color: white;
+}
+
+.ant-picker-calendar-date-value {
+    background-color: #fff;
+}
+
+.ant-picker-cell-selected {
+    background-color: red;
+}
+
+.ant-select-selection-item {
+    color: red !important;
+}

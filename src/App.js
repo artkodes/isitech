@@ -8,6 +8,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //pages
 import Home from "./pages/home";
+import Model from "./pages/model";
+import BookModel from "./pages/book";
+import BecamModel from "./pages/becam_model";
 
 //components
 import Navbar from "./components/navbar";
@@ -17,7 +20,12 @@ import Footer from "./components/footer";
 import { Provider } from "react-redux";
 import store from "./redux/stores";
 
-const routes = [{ path: "/", name: "Home", Component: Home }];
+const routes = [
+  { path: "/", name: "Home", Component: Home },
+  { path: "/model/:id", name: "Home", Component: Model },
+  { path: "/book-model/:id", name: "Home", Component: BookModel },
+  { path: "/becam-model", name: "Home", Component: BecamModel }
+];
 
 function App() {
   let mouseCursor = useRef(null);

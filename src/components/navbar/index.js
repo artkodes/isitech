@@ -40,7 +40,7 @@ function Index() {
           <Link className='_link' to='/'>
             <img className='img' src={logo} alt='logo' />
           </Link>
-          <Link className='_link' to='/'>
+          <Link className='_link' to='/becam-model'>
             becam model
           </Link>
         </div>

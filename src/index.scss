@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
-
+@import "~antd/dist/antd.dark.css";
 
 * {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: none;
   background-color: #000;
-
+  box-sizing: border-box;
+  color: white;
 }
 
 .wrapper {
   height: 100vh;
   min-width: 100%;
-
 }
 
 a {
@@ -25,7 +25,7 @@ a {
 .cursor {
   width: 2rem;
   height: 2rem;
-  border: 2px solid white;
+  border: 1px solid red;
   border-radius: 50px;
   position: absolute;
   top: 50%;
@@ -36,12 +36,11 @@ a {
   pointer-events: none;
   transition: all 0.3s ease;
   transition-property: background, transform;
-  //backdrop-filter: grayscale;
+  backdrop-filter: grayscale(1);
+  background-color: transparent;
 }
-
-
 
 .link-grow {
   transform: scale(2);
-  background: white;
+  background: red;
 }
