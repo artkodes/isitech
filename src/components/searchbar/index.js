@@ -30,7 +30,7 @@ function Index() {
   }, []);
 
   return (
-    <div className=''>
+    <div className='container-search'>
       <div className='search'>
         <input
           className='input'
@@ -46,12 +46,19 @@ function Index() {
       <div className='grid_models'>
         {Models.map((model, key) => (
           <Link to={"/model/" + key} className='model'>
-            <img
+            <div
+              style={{
+                backgroundImage: `url(${
+                  model.pics[Math.floor(Math.random() * model.pics.length) + 0]
+                })`
+              }}
+            ></div>
+            {/* <img
               src={
                 model.pics[Math.floor(Math.random() * model.pics.length) + 0]
               }
               alt=''
-            />
+            /> */}
           </Link>
         ))}
       </div>

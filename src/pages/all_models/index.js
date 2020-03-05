@@ -19,6 +19,8 @@ function Animations() {
       ease: Power3.easeInOut
     });
 
+    console.log("w", window.innerWidth);
+
     var slider = new Swiper(".swiper-container", {
       slidesPerView: "auto",
       spaceBetween: 150,

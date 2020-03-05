@@ -39,10 +39,10 @@ function Index(props) {
           <h3>k o d e s</h3>
         </div>
 
-        <p>
+        {/* <p id='p'>
           Stop getting angry when people don’t support you. Most of them can’t
           even support themselves.
-        </p>
+        </p> */}
       </div>
     </div>
   );

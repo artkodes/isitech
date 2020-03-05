@@ -17,6 +17,8 @@ import AllModels from "./pages/all_models";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
+import "./responsive/responsive.scss";
+
 //redux
 import { Provider } from "react-redux";
 import store from "./redux/stores";
