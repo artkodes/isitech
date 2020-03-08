@@ -41,7 +41,6 @@ function Index() {
         <img
           src={pics[Math.floor(Math.random() * pics.length) + 0]}
           alt=''
-          srcset=''
         />
         <h1>{Models[id].name} </h1>
         <p>
@@ -60,14 +59,12 @@ function Index() {
         <img
           src={pics[Math.floor(Math.random() * pics.length) + 0]}
           alt=''
-          srcset=''
         />
       </div>
       <div className='midle_2'>
         <img
           src={pics[Math.floor(Math.random() * pics.length) + 0]}
           alt=''
-          srcset=''
         />
         <Link to={"/book-model/" + id}>
           <button className='btn'>book model</button>
@@ -77,7 +74,6 @@ function Index() {
         <img
           src={pics[Math.floor(Math.random() * pics.length) + 0]}
           alt=''
-          srcset=''
         />
       </div>
     </div>

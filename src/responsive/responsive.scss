@@ -13,8 +13,15 @@ $gray: #efefef;
     @include media("<=phone") {
         //background-color: #cbd4c2;
 
-        &:before {
+        /*&:before {
             content: "Phone viewport";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
 
         .book {
@@ -115,8 +122,15 @@ $gray: #efefef;
     @include media(">phone", "<=425px") {
         //background-color: #ff9b54;
 
-        &:before {
+       /* &:before {
             content: "Large phone stops at 420px";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
 
         .book {
@@ -135,23 +149,25 @@ $gray: #efefef;
 
         }
 
+        .container-search {
 
-        .grid_models {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 200px 200px;
-            grid-row-gap: 20px;
+            .grid_models {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 200px 200px;
+                grid-row-gap: 20px;
 
-            .model {
-                color: white;
+                .model {
+                    color: white;
 
-                div {
-                    background-position: center;
-                    background-size: cover;
+                    div {
+                        background-position: center;
+                        background-size: cover;
+
+                    }
 
                 }
 
             }
-
         }
 
         .model_title {
@@ -193,12 +209,18 @@ $gray: #efefef;
         }
     }
 
-
     @include media(">425px", "<=580px") {
         //background-color: #ae76a6;
 
-        &:before {
+        /*&:before {
             content: "Large phone to tablet";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
 
         .book {
@@ -283,15 +305,19 @@ $gray: #efefef;
 
     }
 
-
-
-
     // if the screen is going to be greater than 425px and less than or eqaul to 768px
     @include media(">580px", "<=tablet") {
         //background-color: #ae76a6;
 
-        &:before {
+       /* &:before {
             content: "Ipad";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
 
         .book {
@@ -366,8 +392,15 @@ $gray: #efefef;
     @include media(">768px", "<=1000px") {
 
 
-        &:before {
+       /* &:before {
             content: "test2";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
 
         .book {
@@ -441,9 +474,17 @@ $gray: #efefef;
 
         //background-color: #a3c3d9;
 
-        &:before {
+        /*&:before {
             content: "iPad Pro";
+        }*/
+
+        .becam_model {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 20px;
+
         }
+
 
         .book {
             grid-template-columns: 410px 1fr;
@@ -504,6 +545,7 @@ $gray: #efefef;
             margin-top: 20px;
         }
 
+
         .container-search {
 
             .grid_models {
@@ -513,18 +555,18 @@ $gray: #efefef;
 
         }
 
-        &:before {
+        /*&:before {
             content: "Tablet to laptop/desktop viewport";
-        }
+        }*/
     }
 
     // if the screen is going to be greater than or equal to 1366px
     @include media(">=desktop") {
         //background-color: #f8bd7f;
 
-        &:before {
+        /*&:before {
             content: "Desktop viewport only";
-        }
+        }*/
 
         .footer {
             margin-top: 40px;
@@ -535,8 +577,8 @@ $gray: #efefef;
     @include media(">=LGdesktop", "retina2x") {
         background-color: #efefef;
 
-        &:before {
+        /*&:before {
             content: "Large desktop screen";
-        }
+        }*/
     }
 }

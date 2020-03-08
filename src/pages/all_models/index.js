@@ -9,9 +9,9 @@ import Swiper from "swiper";
 
 import "./all_models.scss";
 
+
 function Animations() {
   let t1 = new TimelineMax();
-
   useEffect(() => {
     t1.from(".swiper-wrapper", 4, {
       opacity: 0,
@@ -166,13 +166,13 @@ function Index() {
       <div className='swiper-wrapper'>
         {Models.map((model, key) => (
           <div className='swiper-slide'>
-            <div class='slide-number'>
+            <div className='slide-number'>
               <p>
                 <span> {(key + 1) * 0.001} </span>
               </p>
             </div>
 
-            <div class='slide-text'>
+            <div className='slide-text'>
               <h4>
                 <span>{model.name} </span>
               </h4>
@@ -183,8 +183,8 @@ function Index() {
                   model.pics[Math.floor(Math.random() * model.pics.length) + 0]
                 })`
               }}
-              class='slide-img'
-            ></div>
+              className='slide-img'
+            > </div>
           </div>
         ))}
       </div>

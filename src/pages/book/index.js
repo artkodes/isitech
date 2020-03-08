@@ -18,12 +18,11 @@ function Index() {
   }
 
   return (
-    <div className='book'>
+      <div className='book'>
       <div className=''>
         <img
           src={pics[Math.floor(Math.random() * pics.length) + 0]}
           alt=''
-          srcset=''
         />
         <h1>{Models[id].name} </h1>
         <p>
